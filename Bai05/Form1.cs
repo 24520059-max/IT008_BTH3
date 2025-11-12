@@ -24,7 +24,7 @@ namespace Bai05
       bool chk2 = double.TryParse(txb2.Text, out n2);
       if (chk1 == false || chk2 == false)
       {
-        MessageBox.Show("Thong tin nhap khong hop le. Vui long nhap lai");
+        MessageBox.Show("Thông tin nhập không hợp lệ. Vui lòng nhập lại");
         return;
       }
       else txbAns.Text = (n1 + n2).ToString(); 
@@ -37,7 +37,7 @@ namespace Bai05
       bool chk2 = double.TryParse(txb2.Text, out n2);
       if (chk1 == false || chk2 == false)
       {
-        MessageBox.Show("Thong tin nhap khong hop le. Vui long nhap lai");
+        MessageBox.Show("Thông tin nhập không hợp lệ. Vui lòng nhập lại");
         return;
       }
       else txbAns.Text = (n1 - n2).ToString(); 
@@ -50,7 +50,7 @@ namespace Bai05
       bool chk2 = double.TryParse(txb2.Text, out n2);
       if (chk1 == false || chk2 == false)
       {
-        MessageBox.Show("Thong tin nhap khong hop le. Vui long nhap lai");
+        MessageBox.Show("Thông tin nhập không hợp lệ. Vui lòng nhập lại");
         return;
       }
       else txbAns.Text = (n1 * n2).ToString(); 
@@ -63,13 +63,13 @@ namespace Bai05
       bool chk2 = double.TryParse(txb2.Text, out n2);
       if (chk1 == false || chk2 == false)
       {
-        MessageBox.Show("Thong tin nhap khong hop le. Vui long nhap lai");
+        MessageBox.Show("Thông tin nhập không hợp lệ. Vui lòng nhập lại");
         return;
       }
 
       if (n2 == 0)
       {
-        MessageBox.Show("Khong the chia cho 0");
+        MessageBox.Show("Không thể chia cho 0");
         return; 
       }
       else txbAns.Text = (n1 / n2).ToString(); 

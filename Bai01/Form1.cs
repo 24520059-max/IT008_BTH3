@@ -15,56 +15,49 @@ namespace Bai01
         public Form1()
         {
             InitializeComponent();
-            // //Su kien 1: load form 
             this.Load += Form_Load;  
-            // //Su kien 2: shown form 
             this.Shown += Form_Show; 
-            // //Su kien 3: Form_Activated 
             this.Activated += Form_Activated; 
-            // //Su kien 4: Form_deactivated 
             this.Deactivate += Form_Deactivated;  
-            // //Su kien 5: Form _ closing 
             this.FormClosing += Form_Closing; 
-            // //Su kien 6: Form _Closed 
             this.FormClosed += Form_Closed;
             statusLabel.MinimumSize = new Size(100, 100); 
         }
 
         public void Form_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Form Load: Form Dang duoc Load du lieu"); 
-
+            MessageBox.Show("Form Load: Form đang được tải dữ liệu"); 
         }
 
         public void Form_Show(object sender, EventArgs e)
         {
-            statusLabel.Text = "Form Shown: Form dang hien thi lan dau"; 
+            statusLabel.Text = "Form Shown: Form đang hiển thị lần đầu"; 
         }
 
         public void Form_Activated(object sender, EventArgs e)
         {
-            statusLabel.Text = "Form Activated: Form da duoc focus"; 
+            statusLabel.Text = "Form Activated: Form đã được focus"; 
         }
 
         public void Form_Deactivated(object sender, EventArgs e)
         {
-            statusLabel.Text = "Form Deactivated: Form da mat focus"; 
+            statusLabel.Text = "Form Deactivated: Form đã mất focus"; 
         }
 
         public void Form_Closing(object sender, EventArgs e)
         {
-            MessageBox.Show("Form Closing: Nguoi dung dang dong form"); 
+            MessageBox.Show("Form Closing: Người dùng đang đóng form"); 
         }
 
         public void Form_Closed(object sender, EventArgs e)
         {
-            MessageBox.Show("Form Closed: Nguoi dung da dong form"); 
+            MessageBox.Show("Form Closed: Người dùng đã đóng form"); 
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
-            f2.Text = "Form phu";
+            f2.Text = "Form phụ";
             f2.Show();
         }
     }
