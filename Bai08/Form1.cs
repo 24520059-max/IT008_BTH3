@@ -23,7 +23,7 @@ namespace Bai08
                          txbMoney.Text == "" || txbAddress.Text == "";
             if (check)
             {
-                MessageBox.Show("Invalid input");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                 return; 
             }
             for (int i = 0; i < lstView.Items.Count; ++i)
@@ -48,7 +48,7 @@ namespace Bai08
             newItem.SubItems.Add(txbAddress.Text);     // SubItems[3]
             newItem.SubItems.Add(txbMoney.Text);          // SubItems[4]
             lstView.Items.Add(newItem);
-
+            MessageBox.Show("Thêm mới dữ liệu thành công!"); 
         }
 
         private void button2_Click(object sender, EventArgs e)

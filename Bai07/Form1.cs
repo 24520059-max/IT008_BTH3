@@ -29,7 +29,7 @@ namespace Bai07
 
         private void btnDatVe_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Do you want to order this position?", "Order", MessageBoxButtons.YesNo);
+            DialogResult res = MessageBox.Show("Bạn có muốn đặt không?", "Order", MessageBoxButtons.YesNo);
             if (res == DialogResult.No)
             {
                 return; 

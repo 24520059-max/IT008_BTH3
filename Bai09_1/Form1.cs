@@ -30,7 +30,7 @@ namespace Bai09_1
                    cbChuyenNganh.SelectedIndex == -1 || getGender() == 0;
       if (check)
       {
-        MessageBox.Show("Chuc nang khong ho tro");
+        MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
         return; 
       }
 
@@ -39,18 +39,18 @@ namespace Bai09_1
         DataGridViewRow row = dataView.Rows[i];
         if (row.Cells[0].Value == txbStudentID.Text)
         {
-          MessageBox.Show("Ma so sinh vien da ton tai. Vui long nhap lai");
+          MessageBox.Show("Mã số sinh viên đã tồn tại. Vui lòng nhập lại");
           return; 
         }
       }
 
-      string gender = ((getGender() == 1) ? "Nam" : "Nu");
+      string gender = ((getGender() == 1) ? "Nam" : "Nữ");
       int count = lstSubject2.Items.Count;
       string chuyenNganh = cbChuyenNganh.SelectedItem.ToString();
       MessageBox.Show(chuyenNganh); 
       dataView.Rows.Add(txbStudentID.Text.ToString(), txbStudentName.Text.ToString(), chuyenNganh,  gender, count); 
       // MessageBox.Show(cbChuyenNganh.SelectedIndex.ToString()); 
-      
+      MessageBox.Show("Thêm mới dữ liệu thành công!"); 
     }
 
     private void btnAddSubject_Click(object sender, EventArgs e)
