@@ -1,0 +1,11 @@
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\bin\Debug\Bai02.exe.config
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\bin\Debug\Bai02.exe
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\bin\Debug\Bai02.pdb
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\obj\Debug\Bai02.csproj.AssemblyReference.cache
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\obj\Debug\Bai02.Properties.Resources.resources
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\obj\Debug\Bai02.csproj.GenerateResource.cache
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\obj\Debug\Bai02.csproj.CoreCompileInputs.cache
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\obj\Debug\Bai02.exe
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\obj\Debug\Bai02.pdb
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\obj\Debug\Bai02.exe.config
+C:\ProgramData\PhoenixOS\0ptional\workspace\C#\Winform\Lab3\Bai02\obj\Debug\Bai02.Form1.resources
