@@ -22,6 +22,7 @@ namespace Bai01
             this.FormClosing += Form_Closing; 
             this.FormClosed += Form_Closed;
             statusLabel.MinimumSize = new Size(100, 100); 
+            this.StartPosition = FormStartPosition.CenterScreen; 
         }
 
         public void Form_Load(object sender, EventArgs e)

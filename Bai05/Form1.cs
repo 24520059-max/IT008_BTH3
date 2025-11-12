@@ -15,6 +15,7 @@ namespace Bai05
     public Form1()
     {
       InitializeComponent();
+      this.StartPosition = FormStartPosition.CenterScreen; 
     }
 
     private void Plus_Click(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace Bai09_1
     public Form1()
     {
       InitializeComponent();
+      this.StartPosition = FormStartPosition.CenterScreen; 
     }
 
     private int getGender()
@@ -37,7 +38,7 @@ namespace Bai09_1
       for (int i = 0; i < dataView.RowCount; ++i)
       {
         DataGridViewRow row = dataView.Rows[i];
-        if (row.Cells[0].Value == txbStudentID.Text)
+        if (row.Cells[0].Value != null && row.Cells[0].Value.ToString() == txbStudentID.Text)
         {
           MessageBox.Show("Mã số sinh viên đã tồn tại. Vui lòng nhập lại");
           return; 
@@ -47,7 +48,7 @@ namespace Bai09_1
       string gender = ((getGender() == 1) ? "Nam" : "Nữ");
       int count = lstSubject2.Items.Count;
       string chuyenNganh = cbChuyenNganh.SelectedItem.ToString();
-      MessageBox.Show(chuyenNganh); 
+      // MessageBox.Show(chuyenNganh); 
       dataView.Rows.Add(txbStudentID.Text.ToString(), txbStudentName.Text.ToString(), chuyenNganh,  gender, count); 
       // MessageBox.Show(cbChuyenNganh.SelectedIndex.ToString()); 
       MessageBox.Show("Thêm mới dữ liệu thành công!"); 

@@ -37,8 +37,8 @@ namespace Bai08
             this.accountNumber = new System.Windows.Forms.ColumnHeader();
             this.customerName = new System.Windows.Forms.ColumnHeader();
             this.adđress = new System.Windows.Forms.ColumnHeader();
-            this.money = new System.Windows.Forms.ColumnHeader();
             this.lstView = new System.Windows.Forms.ListView();
+            this.moneyColumn = new System.Windows.Forms.ColumnHeader();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
@@ -93,35 +93,35 @@ namespace Bai08
             // accountNumber
             // 
             this.accountNumber.Text = "Mã tài khoản";
-            this.accountNumber.Width = 270;
+            this.accountNumber.Width = 128;
             // 
             // customerName
             // 
             this.customerName.Text = "Tên khách hàng";
-            this.customerName.Width = 200;
+            this.customerName.Width = 164;
             // 
             // adđress
             // 
             this.adđress.Text = "Địa chỉ";
-            this.adđress.Width = 354;
-            // 
-            // money
-            // 
-            this.money.Text = "Số tiền";
-            this.money.Width = 119;
+            this.adđress.Width = 180;
             // 
             // lstView
             // 
-            this.lstView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { this.STT, this.accountNumber, this.customerName, this.adđress, this.money });
+            this.lstView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { this.STT, this.accountNumber, this.customerName, this.adđress, this.moneyColumn });
             this.lstView.GridLines = true;
             this.lstView.HideSelection = false;
             this.lstView.Location = new System.Drawing.Point(-3, 375);
             this.lstView.Name = "lstView";
-            this.lstView.Size = new System.Drawing.Size(1028, 355);
+            this.lstView.Size = new System.Drawing.Size(1049, 355);
             this.lstView.TabIndex = 0;
             this.lstView.UseCompatibleStateImageBehavior = false;
             this.lstView.View = System.Windows.Forms.View.Details;
             this.lstView.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lstView_ItemSelectionChanged);
+            // 
+            // moneyColumn
+            // 
+            this.moneyColumn.Text = "Số tiền";
+            this.moneyColumn.Width = 127;
             // 
             // btnAdd
             // 
@@ -211,7 +211,7 @@ namespace Bai08
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 728);
+            this.ClientSize = new System.Drawing.Size(959, 728);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -230,6 +230,8 @@ namespace Bai08
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.ColumnHeader moneyColumn;
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -251,7 +253,6 @@ namespace Bai08
         private System.Windows.Forms.ColumnHeader accountNumber;
         private System.Windows.Forms.ColumnHeader customerName;
         private System.Windows.Forms.ColumnHeader adđress;
-        private System.Windows.Forms.ColumnHeader money;
         private System.Windows.Forms.ListView lstView;
 
         #endregion

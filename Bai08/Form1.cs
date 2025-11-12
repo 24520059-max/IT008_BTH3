@@ -12,11 +12,13 @@ namespace Bai08
 {
     public partial class Form1 : Form
     {
+        private int cnt = 1; 
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen; 
         }
-
+        
         private void btnAdd_Click(object sender, EventArgs e)
         {
             bool check = txbAccountNumber.Text == "" || txbCustomerName.Text == "" ||
@@ -34,10 +36,12 @@ namespace Bai08
                     item.SubItems[2].Text = txbCustomerName.Text;
                     item.SubItems[3].Text = txbAddress.Text;
                     item.SubItems[4].Text = txbMoney.Text;
+                    MessageBox.Show("Cập nhat dữ liệu thành công"); 
                     return;
                 }
             }
-            int index = lstView.Items.Count + 1;
+
+            int index = cnt; 
             // MessageBox.Show(index.ToString());
             // MessageBox.Show(txbCustomerName.Text); 
             // Tạo item với index làm cột 0
@@ -48,7 +52,8 @@ namespace Bai08
             newItem.SubItems.Add(txbAddress.Text);     // SubItems[3]
             newItem.SubItems.Add(txbMoney.Text);          // SubItems[4]
             lstView.Items.Add(newItem);
-            MessageBox.Show("Thêm mới dữ liệu thành công!"); 
+            MessageBox.Show("Thêm mới dữ liệu thành công!");
+            cnt += 1; 
         }
 
         private void button2_Click(object sender, EventArgs e)

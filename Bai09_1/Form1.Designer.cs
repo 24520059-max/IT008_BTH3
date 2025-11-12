@@ -320,7 +320,7 @@ namespace Bai09_1
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataView);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Quản lý sinh viên";
             ((System.ComponentModel.ISupportInitialize)(this.dataView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

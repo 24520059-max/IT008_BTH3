@@ -19,6 +19,7 @@ namespace Bai02
             this.Paint += new PaintEventHandler(Paint_Event);
             this.chkVisibility.Checked = true;
             this.DoubleBuffered = true; 
+            this.StartPosition = FormStartPosition.CenterScreen; 
         }
 
         private void Paint_Event(object sender, PaintEventArgs e)

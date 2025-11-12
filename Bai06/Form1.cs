@@ -22,6 +22,7 @@ namespace Bai06
         {
             InitializeComponent();
             screen.Padding = new Padding(6, 0, 6, 0);
+            this.StartPosition = FormStartPosition.CenterScreen; 
         }
 
         public void ClearScreen()

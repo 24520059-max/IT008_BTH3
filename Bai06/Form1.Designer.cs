@@ -302,7 +302,7 @@ namespace Bai06
             this.Times.Name = "Times";
             this.Times.Size = new System.Drawing.Size(57, 52);
             this.Times.TabIndex = 15;
-            this.Times.Text = "*";
+            this.Times.Text = "X";
             this.Times.UseVisualStyleBackColor = true;
             this.Times.Click += new System.EventHandler(this.Times_Click);
             // 
@@ -398,9 +398,10 @@ namespace Bai06
             // 
             // screenLabel
             // 
-            this.screenLabel.Location = new System.Drawing.Point(315, 5);
+            this.screenLabel.AutoSize = true;
+            this.screenLabel.Location = new System.Drawing.Point(3, 5);
             this.screenLabel.Name = "screenLabel";
-            this.screenLabel.Size = new System.Drawing.Size(108, 28);
+            this.screenLabel.Size = new System.Drawing.Size(0, 20);
             this.screenLabel.TabIndex = 6;
             this.screenLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 

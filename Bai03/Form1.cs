@@ -16,6 +16,7 @@ namespace Bai03
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen; 
         }
 
         private void button1_Click(object sender, EventArgs e)
